@@ -1,32 +1,64 @@
----
-layout: default
----
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
 
 </div>
+  <body>
+    <!--{{ content }}-->
+    <section>
+        <h1>Jacob Kaiserman's Personal Website</h1>
+      </section>
+      <section>
+        <h1>slide 2</h1>
+      </section>
+      <section>
+        <h1>slide 3</h1>
+      </section>
+      <section>
+        <h1>slide 4</h1>
+      </section>
+      <section>
+        <h1>slide 5</h1>
+      </section>
+  </body>
+</html>
+
+<style>
+    html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+</style>
