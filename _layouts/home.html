@@ -6,8 +6,8 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
+  {% include header.html %}
 
-</div>
   <body>
     <!--{{ content }}-->
     <section>
@@ -29,7 +29,7 @@
 </html>
 
 <style>
-    html, body, section {
+html, body, section {
   block-size: 100%;
 }
 

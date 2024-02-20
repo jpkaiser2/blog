@@ -1,0 +1,59 @@
+<br>
+<div class="navContainer">
+  <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a class="" href="#home">Blog</a></li>
+      <li><a class="" href="#home">About Me</a></li>
+  </ul>    
+</div>
+
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.69);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
+position: fixed;
+top: 20px;
+
+width: 80%;
+/* Removed the align-self property */
+}
+
+li {
+float: left; /* Remove float for centering */
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: medium;
+}
+
+li a:hover:not(.active) {
+background-color: #dcdcdc;
+}
+li a:not(.active) {
+color: rgb(0, 0, 0);
+}
+
+.active {
+background-color: #000000;
+}
+
+.navContainer {
+/* Added the following properties for centering */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</style>
