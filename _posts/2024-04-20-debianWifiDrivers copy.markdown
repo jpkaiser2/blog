@@ -4,7 +4,7 @@ title:  "Installing Macbook Pro Broadcom Wifi Drivers on Debian"
 date:   2024-04-20 16:37:26 -0500
 ---
 <h1>Installing Macbook Pro Broadcom Wifi Drivers on Debian</h1>
-![Mdebian on macbook pro](/assets/images/debian.png)
+
 I am writing this article because I have found no resources on this issue. I hope that it can help the 2 and a half people with the same issue.
 
 I had an old 2012 unibody MacBook Pro that was running very slow on macOS. Even though it had good specs (I upgraded the ram and replaced the HDD with an SSD), it was still running slow since macOS was no longer optimized for it. I decided to install a GNU/Linux distro to get some use out of it and learn a bit about Linux.
