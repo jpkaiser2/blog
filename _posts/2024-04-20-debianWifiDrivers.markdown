@@ -2,6 +2,7 @@
 layout: post
 title:  "Installing Macbook Pro Broadcom Wifi Drivers on Debian"
 date:   2024-04-20 16:37:26 -0500
+image: https://jacobkaiserman.com/website/assets/images/debian.png
 ---
 <h1>Installing Macbook Pro Broadcom Wifi Drivers on Debian</h1>
 ![debian on macbook pro](https://jacobkaiserman.com/website/assets/images/debian.png)
